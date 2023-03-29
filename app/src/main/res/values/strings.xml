@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SnakeGame</string>
+    <string name="score_view_text">Score: </string>
+    <string name="game_state_button_new_game">New Game</string>
+    <string name="game_state_button_start_game">Start Game</string>
+    <string name="game_state_button_stop_game">Stop Game</string>
+    <string name="game_board_winner_copy">Wins!</string>
+    <string name="game_board_tie_copy">Tie!</string>
+    <string name="main_menu_button_start_game">Start Game</string>
+    <string name="main_menu_button_scores">Scores</string>
+    <string name="main_menu_button_snake_settings">Snake Settings</string>
+    <string name="main_menu_button_achievements">Achievements</string>
+    <string name="main_menu_button_login">Login</string>
+    <string name="title_activity_score">ScoreActivity</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_player_1_hint">Player 1</string>
+    <string name="settings_player_2_hint">Player 2</string>
+    <string name="settings_button_change">Change</string>
+    <string name="dialog_button_confirm">Confirm</string>
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="dialog_color_chooser_title">Choose color</string>
+    <string name="settings_message_settings_saved">Settings Saved</string>
+    <string name="score_text_no_scores">No scores yet</string>
+    <string name="score_screen_title">Scores</string>
+</resources>

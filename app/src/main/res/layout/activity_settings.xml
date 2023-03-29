@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mintGreen"
+    tools:context=".presentation.ui.screen.settings.SettingsActivity">
+
+
+    <ImageView
+        android:id="@+id/settings_button_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:fontFamily="@font/eight_bit_wonder"
+        android:text="@string/settings_title"
+        android:textColor="@color/darkGreen"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_Player1Name"
+
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        app:layout_constraintEnd_toStartOf="@+id/view_colorChooser_player1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/eight_bit_wonder"
+            android:hint="@string/settings_player_1_hint"
+            android:maxLength="8" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_Player2Name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/view_colorChooser_player2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_Player1Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/eight_bit_wonder"
+            android:hint="@string/settings_player_2_hint"
+            android:maxLength="8" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/view_colorChooser_player1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="#00FF00"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout_Player1Name"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/view_colorChooser_player2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="#FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout_Player2Name"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_save_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/eight_bit_wonder"
+        android:text="@string/settings_button_change"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_Player2Name"
+        app:layout_constraintVertical_bias="0.65" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
