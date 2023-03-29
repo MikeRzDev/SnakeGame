@@ -27,3 +27,6 @@ Its architecture is based on Clean Architecture and MVVM with the three basic la
 
 It also includes a pair of unit tests written with JUnit and Mockk to demonstrate 
 my style of writing tests.
+
+
+[![Watch the video](https://img.youtube.com/vi/dln3cg5OTyk/maxresdefault.jpg)](https://www.youtube.com/watch?v=dln3cg5OTyk)
